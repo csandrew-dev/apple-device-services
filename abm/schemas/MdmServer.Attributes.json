@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MdmServer.Attributes",
+  "description": "Attributes that describe a device management service resource.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/applebusinessmanagerapi/mdmserver/attributes-data.dictionary",
+  "x-apple-developer-api-version": "1.1+",
+  "type": "object",
+  "properties": {
+    "createdDateTime": {
+      "description": "The date and time of the creation of the resource.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "serverName": {
+      "description": "The device management service’s name.",
+      "type": "string"
+    },
+    "serverType": {
+      "description": "The type of device management service: MDM, APPLE_CONFIGURATOR, APPLE_MDM",
+      "enum": [ "MDM", "APPLE_CONFIGURATOR", "APPLE_MDM" ]
+    },
+    "updatedDateTime": {
+      "description": "The date and time of the most-recent update for the resource.",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
