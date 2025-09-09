@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MdmServersResponse",
+  "description": "A response that contains a list of device management service resources.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/applebusinessmanagerapi/mdmserversresponse",
+  "x-apple-developer-api-version": "1.1+",
+  "type": "object",
+  "properties": {
+    "errors": {
+      "description": "An array of one or more errors.",
+      "type": "array",
+      "items": {
+        "$ref": "ErrorResponse.Errors.json"
+      }
+    }
+  }
+}

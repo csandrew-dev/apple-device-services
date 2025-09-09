@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ErrorLinks",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/applebusinessmanagerapi/mdmserversresponse",
+  "x-apple-developer-api-version": "1.1+",
+  "type": "object",
+  "properties": {
+    "about": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "associated": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri-reference"
+        },
+        {
+          "$ref": "ErrorLinks.Associated.json"
+        }
+      ]
+    }
+  }
+}
