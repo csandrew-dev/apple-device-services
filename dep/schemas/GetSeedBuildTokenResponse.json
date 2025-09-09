@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "GetSeedBuildTokenResponse",
-  "description": "A ranged limit.",
+  "description": "Provides a list of beta enrollment tokens available for the given organization.",
   "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/getseedbuildtokenresponse",
   "type": "object",
   "properties": {

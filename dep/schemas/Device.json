@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Device",
+  "description": "A device’s properties and their values.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/device",
+  "type": "object",
+  "properties": {
+    "description": {
+      "description": "A description of the device.",
+      "type": "string"
+    },
+    "asset_tag": {
+      "description": "The device’s asset tag.",
+      "type": "string"
+    },
+    "color": {
+      "description": "The color of the device.",
+      "type": "string"
+    },
+    "device_assigned_by": {
+      "description": "The email of the person who assigned the device.",
+      "type": "string"
+    },
+    "device_assigned_date": {
+      "description": "A time stamp in ISO 8601 format that indicates when the device was assigned to the MDM server.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "device_family": {
+      "description": "The device’s Apple product family: `iPad`, `iPhone`, `iPod`, `Mac`, `AppleTV`, or `Vision`. This key is valid in X-Server-Protocol-Version 2 and later.",
+      "enum": [ "iPad", "iPhone", "iPod", "Mac", "AppleTV", "Vision" ]
+    },
+    "mdm_migration_deadline": {
+      "description": "A time stamp in ISO 8601 format that indicates the MDM migration deadline. This key is valid with X-Server-Protocol-Version 8 and later.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "model": {
+      "description": "The model name.",
+      "type": "string"
+    },
+    "op_date": {
+      "description": "A time stamp in ISO 8601 format that indicates when the device was added, updated, or deleted. If the value of `op_type` is added, this is the same as `device_assigned_date`. This field is only applicable with the [Sync the List of Devices](https://developer.apple.com/documentation/devicemanagement/sync-devices) command.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "op_type": {
+      "description": "Indicates whether the device was added (assigned to the MDM server), modified, or deleted. Contains one of the following strings: `added`, `modified`, or `deleted`.This field is only applicable with the `sync the list of devices` command.",
+      "enum": [ "added", "modified", "deleted" ]
+    },
+    "os": {
+      "description": "The device’s operating system: `iOS`, `iPadOS`, `OSX`, `tvOS`, or `visionOS`.\nThis key is valid in X-Server-Protocol-Version 2 and later.\nWith X-Server-Protocol-Version 7 and later, iPad product os will return `iPadOS`.",
+      "enum": [ "iOS", "iPadOS", "OSX", "tvOS", "visionOS" ]
+    },
+    "profile_assign_time": {
+      "description": "A time stamp in ISO 8601 format that indicates when a profile was assigned to the device.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "profile_push_time": {
+      "description": "A time stamp in ISO 8601 format that indicates when a profile was pushed to the device.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "profile_status": {
+      "description": "The status of profile installation—either `empty`, `assigned`, `pushed`, or `removed`.",
+      "enum": [ "empty", "assigned", "pushed", "removed" ]
+    },
+    "profile_uuid": {
+      "description": "The unique ID of the assigned profile.",
+      "type": "string"
+    },
+    "response_status": {
+      "$comment": "Undocumented property returned only for the `Device Details` endpoint.",
+      "type": "string"
+    },
+    "serial_number": {
+      "description": "The device’s serial number.",
+      "type": "string"
+    }
+  }
+}

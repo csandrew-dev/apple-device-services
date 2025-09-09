@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProfileServiceRequest",
+  "description": "The request for assigning a profile to a set of devices.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/profileservicerequest",
+  "type": "object",
+  "properties": {
+    "devices": {
+      "description": "Array of strings that contains device serial numbers.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "profile_uuid": {
+      "description": "The unique identifier for a profile.",
+      "type": "string"
+    }
+  }
+}

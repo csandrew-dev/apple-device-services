@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeviceStatusResponse",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/devicestatusresponse",
+  "type": "object",
+  "properties": {
+    "devices": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DefineProfileResponse",
+  "$comment": "The request for a list of devices.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/devicelistrequest",
+  "type": "object",
+  "properties": {
+    "devices": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

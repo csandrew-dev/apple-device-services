@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FetchDeviceRequest",
+  "description": "The request for a list of devices.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/fetchdevicerequest",
+  "type": "object",
+  "properties": {
+    "cursor": {
+      "description": "A hex string that represents the starting position for a request. Use this to retrieve the list of devices that have been added or removed since a previous request. The string can be up to 1000 characters. On the initial request, this should be omitted.",
+      "type": "string"
+    },
+    "limit": {
+      "description": "The maximum number of entries to return. Optional.",
+      "default": 100,
+      "x-type": "int32",
+      "type": "integer",
+      "maximum": 1000
+    }
+  }
+}

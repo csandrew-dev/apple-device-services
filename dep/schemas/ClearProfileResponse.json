@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClearProfileResponse",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/clearprofileresponse",
+  "type": "object",
+  "properties": {
+    "devices": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

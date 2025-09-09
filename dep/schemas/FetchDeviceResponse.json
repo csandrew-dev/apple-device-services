@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FetchDeviceResponse",
+  "description": "The response that contains a list of devices.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/fetchdeviceresponse",
+  "type": "object",
+  "properties": {
+    "cursor": {
+      "description": "Indicates when this request was processed by the server. The MDM server can use this value in future requests if it wants to retrieve only records added or removed since this request.",
+      "type": "string"
+    },
+    "devices": {
+      "description": "An array of dictionaries that provide information about devices. The devices are sorted in chronological order by the time stamp of the operation performed on the device.",
+      "type": "array",
+      "items": {
+        "$ref": "Device.json"
+      }
+    },
+    "fetched_until": {
+      "description": "A date stamp that indicates the progress of the device fetch request, in ISO 8601 format.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "more_to_follow": {
+      "description": "IndIndicates that the request’s limit and cursor values resulted in only a partial list of devices.\nThe MDM server should immediately make another request (starting from the newly returned cursor) to obtain additional records.",
+      "type": "boolean"
+    }
+  }
+}

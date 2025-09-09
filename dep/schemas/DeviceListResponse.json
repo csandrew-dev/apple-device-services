@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DefineProfileResponse",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/devicelistresponse",
+  "type": "object",
+  "properties": {
+    "devices": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "Device.json"
+      }
+    }
+  }
+}
