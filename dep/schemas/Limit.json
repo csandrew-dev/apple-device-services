@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Limit",
+  "description": "A ranged limit.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/limit",
+  "type": "object",
+  "properties": {
+    "default": {
+      "description": "Default value of limit.",
+      "type": "integer",
+      "x-type": "int32"
+    },
+    "maximum": {
+      "description": "Maximum value of limit.",
+      "type": "integer",
+      "x-type": "int32"
+    }
+  }
+}

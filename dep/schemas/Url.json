@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Url",
+  "description": "A URL object.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/url",
+  "type": "object",
+  "properties": {
+    "http_method": {
+      "description": "Possible values: GET, POST, PUT, DELETE",
+      "enum": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    "limit": {
+      "description": "The limit for the URL.",
+      "$ref": "Limit.json"
+    },
+    "uri": {
+      "description": "URI for the API.",
+      "type": "string",
+      "format": "uri"
+    }
+  }
+}
