@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GetSeedBuildTokenResponse",
+  "description": "A ranged limit.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/getseedbuildtokenresponse",
+  "type": "object",
+  "properties": {
+    "betaEnrollmentTokens": {
+      "description": "The list of beta enrollment tokens available for the given organization.",
+      "type": "array",
+      "items": {
+        "$ref": "SeedBuildToken.json"
+      }
+    },
+    "seedBuildTokens": {
+      "$comment": "Undocumented property seen from an actual server response.",
+      "type": "array",
+      "items": {
+        "$ref": "SeedBuildToken.json"
+      }
+    }
+  }
+}

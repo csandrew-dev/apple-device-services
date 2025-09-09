@@ -7,13 +7,13 @@
   "properties": {
     "default": {
       "description": "Default value of limit.",
-      "type": "integer",
-      "x-type": "int32"
+      "x-type": "int32",
+      "type": "integer"
     },
     "maximum": {
       "description": "Maximum value of limit.",
-      "type": "integer",
-      "x-type": "int32"
+      "x-type": "int32",
+      "type": "integer"
     }
   }
 }

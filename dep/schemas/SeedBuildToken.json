@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SeedBuildToken",
+  "description": "Describes a beta enrollment token available for the given organization.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/seedbuildtoken",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "The public facing name, like “iOS 17 Public Beta”.",
+      "type": "string"
+    },
+    "os": {
+      "description": "The platform related to beta build. Possible values are: homePodOS, iOS, OSX, tvOS, visionOS, watchOS]",
+      "enum": [ "homePodOS", "iOS", "OSX", "tvOS", "visionOS", "watchOS" ]
+    },
+    "token": {
+      "description": "The token to use when requesting the beta build.",
+      "type": "string"
+    }
+  }
+}
