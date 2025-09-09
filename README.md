@@ -4,7 +4,7 @@
 
 API schema definitions for Apple's various device management web services.
 
-While Apple does provide documentation in the form of HTML (i.e. for humans to read), machine-readable API schema definitions are much preferred. Not lease of which is for code validation. For example we love the documentation Apple provides in the Apple [Device Management](https://github.com/apple/device-management) repository. We hope one day they will choose to manage and provide machine-readable schemas for their web service APIs, too. These schemas were hand-crafted from the HTML documentation.
+While Apple does provide documentation in the form of HTML (i.e. for humans to read), machine-readable API schema definitions are much preferred for e.g. validation, code generation, etc. We love the documentation Apple provides in the Apple [Device Management](https://github.com/apple/device-management) repository and hope one day they will choose to manage and provide machine-readable schemas for their web service APIs, too. Hopefully these work as a stop-gap until that happens. These schemas were hand-crafted from the HTML documentation.
 
 ## Schemas
 
@@ -12,6 +12,8 @@ A general list of schemas managed here:
 
 - [ABM Schemas](abm/schemas)  
 [JSON Schema](https://json-schema.org) definitions for the [Apple Business Manager API](https://developer.apple.com/documentation/applebusinessmanagerapi)
+- [DEP Schemas](abm/schemas)  
+[JSON Schema](https://json-schema.org) definitions for the [Device Assignment (DEP) API](https://developer.apple.com/documentation/devicemanagement/device-assignment)
 
 ## Contributing
 
