@@ -5,20 +5,18 @@
   "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/errorresponse",
   "type": "object",
   "properties": {
-    "properties": {
-      "errorInfo": {
-        "description": "The request-specific information regarding the failure.",
-        "$ref": "ResponseErrorInfo.json"
-      },
-      "errorMessage": {
-        "description": "The human-readable error message that describes the failure.",
-        "type": "string"
-      },
-      "errorNumber": {
-        "description": "The error number that represents the failure.",
-        "x-type": "int32",
-        "type": "integer"
-      }
+    "errorInfo": {
+      "description": "The request-specific information regarding the failure.",
+      "$ref": "ResponseErrorInfo.json"
+    },
+    "errorMessage": {
+      "description": "The human-readable error message that describes the failure.",
+      "type": "string"
+    },
+    "errorNumber": {
+      "description": "The error number that represents the failure.",
+      "x-type": "int32",
+      "type": "integer"
     }
   }
 }
