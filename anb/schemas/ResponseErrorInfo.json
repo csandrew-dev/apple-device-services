@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResponseErrorInfo",
+  "description": "Information about the error.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/responseerrorinfo",
+  "type": "object",
+  "properties": {
+    "properties": {
+      "assets": {
+        "description": "The requested assets that result in an error.",
+        "type": "array",
+        "items": {
+          "$ref": "Asset.json"
+        }
+      },
+      "clientUserIds": {
+        "description": "The requested users that result in an error.",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "serialNumbers": {
+        "description": "The requested devices that result in an error.",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

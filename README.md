@@ -14,6 +14,8 @@ A general list of schemas managed here:
 [JSON Schema](https://json-schema.org) definitions for the [Apple Business Manager API](https://developer.apple.com/documentation/applebusinessmanagerapi)
 - [DEP Schemas](dep/schemas)  
 [JSON Schema](https://json-schema.org) definitions for the [Device Assignment (DEP) API](https://developer.apple.com/documentation/devicemanagement/device-assignment)
+- [ANB Schemas](anb/schemas)  
+[JSON Schema](https://json-schema.org) definitions for the [App and Book Management (ANB) API](https://developer.apple.com/documentation/devicemanagement/app-and-book-management)
 
 ## Contributing
 

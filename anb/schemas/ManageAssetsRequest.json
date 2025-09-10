@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ManageAssetsRequest",
+  "description": "The request used to remove a profile from devices.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/manageassetsrequest",
+  "type": "object",
+  "required": [ "assets" ],
+  "properties": {
+    "assets": {
+      "description": "The set of `adamId` and `pricingParam` `values`.",
+      "type": "array",
+      "items": {
+        "$ref": "Asset.json"
+      }
+    },
+    "clientUserIds": {
+      "description": "The set of identifiers for users in your organization.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "serialNumbers": {
+      "description": "The set of identifiers for devices in your organization.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

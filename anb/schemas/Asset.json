@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Asset",
+  "description": "A product in the store.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/asset",
+  "type": "object",
+  "properties": {
+    "adamId": {
+      "description": "The unique identifier for a product in the store.",
+      "type": "string"
+    },
+    "pricingParam": {
+      "description": "The quality of a product in the store.",
+      "enum": [ "STDQ", "PLUS" ]
+    }
+  }
+}
