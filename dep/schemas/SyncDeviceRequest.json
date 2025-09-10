@@ -4,6 +4,7 @@
   "description": "The request to sync the list of devices.",
   "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/syncdevicerequest",
   "type": "object",
+  "required": [ "cursor" ],
   "properties": {
     "cursor": {
       "description": "A hex string that represents the starting position for a request. Use this to retrieve the list of devices that have been added or removed since a previous request. The string can be up to 1000 characters.",

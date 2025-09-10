@@ -4,6 +4,7 @@
   "description": "A device’s properties and their values.",
   "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/device",
   "type": "object",
+  "required": [ "serial_number", "model" ],
   "properties": {
     "description": {
       "description": "A description of the device.",

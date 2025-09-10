@@ -4,6 +4,7 @@
   "description": "The response that contains a list of devices.",
   "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/fetchdeviceresponse",
   "type": "object",
+  "required": [ "cursor", "fetched_until", "more_to_follow" ],
   "properties": {
     "cursor": {
       "description": "Indicates when this request was processed by the server. The MDM server can use this value in future requests if it wants to retrieve only records added or removed since this request.",
@@ -22,7 +23,7 @@
       "format": "date-time"
     },
     "more_to_follow": {
-      "description": "IndIndicates that the request’s limit and cursor values resulted in only a partial list of devices.\nThe MDM server should immediately make another request (starting from the newly returned cursor) to obtain additional records.",
+      "description": "Indicates that the request’s limit and cursor values resulted in only a partial list of devices.\nThe MDM server should immediately make another request (starting from the newly returned cursor) to obtain additional records.",
       "type": "boolean"
     }
   }

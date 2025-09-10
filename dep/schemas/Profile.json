@@ -4,6 +4,7 @@
   "description": "A profile’s properties and their values.",
   "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/profile",
   "type": "object",
+  "required": [ "is_mdm_removable", "org_magic" ],
   "properties": {
     "allow_pairing": {
       "description": "Default is `true`. In iOS 13, this property was deprecated.",
