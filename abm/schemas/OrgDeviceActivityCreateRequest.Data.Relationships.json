@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OrgDeviceActivityCreateRequest.Data.Relationships",
+  "description": "The relationships you include in the request, and those that you can operate on.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/applebusinessmanagerapi/orgdeviceactivitycreaterequest/data-data.dictionary/relationships-data.dictionary",
+  "x-apple-developer-api-version": "1.1+",
+  "type": "object",
+  "required": [ "devices" ],
+  "properties": {
+    "devices": {
+      "$ref": "OrgDeviceActivityCreateRequest.Data.Relationships.Devices.json"
+    },
+    "mdmServer": {
+      "$ref": "OrgDeviceActivityCreateRequest.Data.Relationships.MdmServer.json"
+    }
+  }
+}

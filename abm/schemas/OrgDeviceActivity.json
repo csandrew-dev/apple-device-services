@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OrgDeviceActivity",
+  "description": "The data structure that represents an organization device activity resource.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/applebusinessmanagerapi/orgdeviceactivity",
+  "x-apple-developer-api-version": "1.1+",
+  "type": "object",
+  "required": [ "id", "type" ],
+  "properties": {
+    "id": {
+      "description": "The opaque resource ID that uniquely identifies the resource.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The resource type.",
+      "type": "string"
+    },
+    "attributes": {
+      "description": "The resource’s attributes.",
+      "$ref": "OrgDeviceActivity.Attributes.json"
+    },
+    "links": {
+      "description": "Navigational links that include the self-link.",
+      "$ref": "ResourceLinks.json"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OrgDeviceActivityType",
+  "description": "Strings that represent organization device activities.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/applebusinessmanagerapi/orgdeviceactivitytype",
+  "x-apple-developer-api-version": "1.1+",
+  "type": "string",
+  "enum": [ "ASSIGN_DEVICES", "UNASSIGN_DEVICES" ]
+}
