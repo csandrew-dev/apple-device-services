@@ -7,7 +7,10 @@
   "properties": {
     "http_method": {
       "description": "Possible values: GET, POST, PUT, DELETE",
-      "enum": [ "GET", "POST", "PUT", "DELETE" ]
+      "type": "array",
+      "items": {
+        "enum": [ "GET", "POST", "PUT", "DELETE" ]
+      }
     },
     "limit": {
       "description": "The limit for the URL.",
