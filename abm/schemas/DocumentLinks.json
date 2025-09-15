@@ -8,7 +8,7 @@
   "required": [ "self" ],
   "properties": {
     "self": {
-      "description": "The link that produces the current ",
+      "description": "The link that produces the current document.",
       "type": "string",
       "format": "uri-reference"
     }

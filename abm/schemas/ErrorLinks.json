@@ -16,9 +16,39 @@
           "format": "uri-reference"
         },
         {
-          "$ref": "ErrorLinks.Associated.json"
+          "$ref": "#/$defs/ErrorLinks.Associated"
         }
       ]
+    }
+  },
+  "$defs": {
+    "ErrorLinks.Associated": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "ErrorLinks.Associated",
+      "x-apple-developer-api-uri": "https://developer.apple.com/documentation/applebusinessmanagerapi/errorlinks/associated-data.dictionary",
+      "x-apple-developer-api-version": "1.1+",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "format": "uri-reference"
+        },
+        "meta": {
+          "$ref": "#/$defs/ErrorLinks.Associated.Meta"
+        }
+      }
+    },
+    "ErrorLinks.Associated.Meta": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "ErrorLinks.Associated.Meta",
+      "x-apple-developer-api-uri": "https://developer.apple.com/documentation/applebusinessmanagerapi/errorlinks/associated-data.dictionary/meta-data.dictionary",
+      "x-apple-developer-api-version": "1.1+",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        }
+      }
     }
   }
 }
