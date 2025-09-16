@@ -71,8 +71,8 @@
       "description": "A language designator is a code that represents a language.\nUse the two-letter ISO 639-1 standard (preferred) or the three-letter ISO 639-2 standard. If an ISO 639-1 code is not available for a particular language, use the ISO 639-2 code instead.\nSee [Language and Locale IDs](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html) for more information.\nExample two-letter: `en`, `fr`, `ja`\nExample three-letter: `eng`, `fre`, `jpn`, `haw`\nAvailable on tvOS and macOS 11 and later.",
       "examples": [ "en", "fr", "ja", "eng", "fre", "jpn", "haw" ],
       "type": "string",
-      "minLength": 2,
-      "maxLength": 3
+      "maxLength": 3,
+      "minLength": 2
     },
     "org_magic": {
       "description": "A string that uniquely identifies various services that are managed by a single organization.",
@@ -89,8 +89,8 @@
     "region": {
       "description": "A region designator is a code that represents a country. Available on tvOS and macOS 11 and later.\nUse the ISO 3166-1 standard, a two-letter, capitalized code.\nExamples: US, GB, AU",
       "type": "string",
-      "minLength": 2,
-      "maxLength": 2
+      "maxLength": 2,
+      "minLength": 2
     },
     "skip_setup_items": {
       "description": "A list of setup panes to skip. The list of valid strings is defined in [SkipKeys](https://developer.apple.com/documentation/devicemanagement/skipkeys).",
