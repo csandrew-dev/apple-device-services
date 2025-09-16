@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AccountDrivenEnrollmentProfileRequest",
+  "description": "The details for an account-driven enrollment profile.",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/accountdrivenenrollmentprofilerequest",
+  "type": "object",
+  "required": [ "mdm_service_discovery_url" ],
+  "properties": {
+    "mdm_service_discovery_url": {
+      "description": "The MDM Service Discovery URL that the system redirects the user to during account-driven enrollment.",
+      "type": "string",
+      "format": "uri"
+    }
+  }
+}

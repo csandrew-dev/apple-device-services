@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ActivationLockStatusResponse",
+  "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/activationlockstatusresponse",
+  "type": "object",
+  "properties": {
+    "response_status": {
+      "type": "string"
+    },
+    "serial_number": {
+      "type": "string"
+    }
+  }
+}
