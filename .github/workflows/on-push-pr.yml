@@ -12,8 +12,8 @@ jobs:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8  # v5.0.0
 
       - run: |
-          curl -RLo jsonschema.zip https://github.com/sourcemeta/jsonschema/releases/download/v11.8.3/jsonschema-11.8.3-linux-arm64.zip
-          echo "b62257e8f7b60dea1a230b048c3ffc9790385a1e118828618b99c8dd2fb7b3db  jsonschema.zip" | sha256sum -c -
+          curl -RLo jsonschema.zip 4e4fb663549fc6fcde9aa705bd6ce75294b846dec47bf155aaa5af89f0501cff
+          echo "4e4fb663549fc6fcde9aa705bd6ce75294b846dec47bf155aaa5af89f0501cff  jsonschema.zip" | sha256sum -c -
           unzip -j jsonschema.zip
 
       - run: ./jsonschema lint abm/schemas dep/schemas anb/schemas
