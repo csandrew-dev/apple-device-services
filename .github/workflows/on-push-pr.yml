@@ -11,9 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8  # v5.0.0
 
-      - run: curl -RLO https://github.com/sourcemeta/jsonschema/releases/download/v11.8.0/jsonschema-11.8.0-linux-x86_64.zip
-
-      - run: unzip -j jsonschema-*.zip
+      - run: |
+          curl -RLo jsonschema.zip https://github.com/sourcemeta/jsonschema/releases/download/v11.8.0/jsonschema-11.8.0-linux-x86_64.zip
+          echo "6ba71656c8c807ddd366569694106488ecb7bc5dd1f69c076a3d6752c83d7561  jsonschema.zip" | sha256sum -c -
+          unzip -j jsonschema.zip
 
       - run: ./jsonschema lint abm/schemas dep/schemas anb/schemas
 
