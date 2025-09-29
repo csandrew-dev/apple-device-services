@@ -18,6 +18,7 @@
       "type": "string"
     },
     "serial_number": {
+      "description": "Serial number of the device.",
       "examples": [ "B7CJ500QF1MA" ],
       "type": "string"
     }
