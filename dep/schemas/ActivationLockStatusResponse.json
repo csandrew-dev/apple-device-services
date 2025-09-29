@@ -1,13 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "ActivationLockStatusResponse",
+  "$comment": "Required properties were inferred and not stated in documentation. Examples taken from deprecated PDF MDM documentation.",
   "x-apple-developer-api-uri": "https://developer.apple.com/documentation/devicemanagement/activationlockstatusresponse",
   "type": "object",
+  "required": [ "response_status", "serial_number" ],
   "properties": {
     "response_status": {
+      "description": "SUCCESS or one of the failure responses listed below.",
+      "examples": [
+        "NOT_ACCESSIBLE",
+        "ORG_NOT_SUPPORTED",
+        "DEVICE_NOT_SUPPORTED",
+        "DEVICE_ALREADY_LOCKED",
+        "FAILED"
+      ],
       "type": "string"
     },
     "serial_number": {
+      "examples": [ "B7CJ500QF1MA" ],
       "type": "string"
     }
   }
